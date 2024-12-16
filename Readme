@@ -1,0 +1,116 @@
+# Smart Feedback and Ticket Automation System
+
+## Project Overview
+This project is a **Smart Feedback Form and Ticket Automation System** designed to streamline customer feedback collection and automate support ticket replies using advanced AI technologies such as **LangGraph**, **RAG (Retrieval-Augmented Generation)**, and **Gemini**. It reduces human intervention in managing feedback and ticket responses while enhancing response accuracy and efficiency.
+
+---
+
+## Key Features
+
+### 1. **Smart Feedback Form**
+- **Frontend Framework:** React.js
+- **Feedback Data Collection:** Email, Product, Purchase Date, Rating, Review Title, Review Description.
+- **Voice Input Support:** Powered by web speech APIs.
+- **AI-Powered Review Generation:** Suggests relevant review titles and descriptions based on user ratings.
+- **Form Validation:** Ensures accurate user input before submission.
+
+### 2. **Automated Ticket Reply System**
+- **Technology Stack:** LangGraph, RAG, and Gemini.
+- **Automation Workflow:**
+  - Extracts user concerns from feedback submissions.
+  - Retrieves relevant information using RAG.
+  - Generates accurate responses through Gemini models.
+  - Sends automated email replies via Gmail API.
+
+### 3. **Database Management**
+- **Backend Framework:** Flask (Python)
+- **Database:** MySQL (XAMPP)
+- **Storage:** Securely stores feedback data in a relational database.
+
+---
+
+## System Architecture
+1. **Frontend:** React.js (UI/UX, feedback form, and dynamic responses)
+2. **Backend:** Flask API for form submission and database interactions.
+3. **Database:** MySQL (local XAMPP instance).
+4. **AI Automation:** LangGraph, RAG, and Gemini for automated responses.
+5. **Email Integration:** Gmail API for automated ticket replies.
+
+---
+
+## Installation and Setup
+
+### Prerequisites
+- Node.js
+- XAMPP (for MySQL database)
+- Python 3.x
+- Gmail API credentials (for email automation)
+
+### Steps to Run the Project
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-repo/smart-feedback-system.git
+   cd smart-feedback-system
+   ```
+
+2. **Setup Frontend:**
+   ```bash
+   cd frontend
+   npm install
+   npm start
+   ```
+
+3. **Setup Backend:**
+   ```bash
+   cd backend
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   pip install -r requirements.txt
+   python app.py
+   ```
+
+4. **Database Setup:**
+   - Open XAMPP and start Apache & MySQL.
+   - Create a database `feedback_db` in phpMyAdmin.
+
+5. **Environment Variables:**
+   - Create a `.env` file in the backend directory with:
+     ```env
+     MYSQL_USER=root
+     MYSQL_PASSWORD=your_password
+     MYSQL_HOST=localhost
+     MYSQL_DATABASE=feedback_db
+     GMAIL_API_CREDENTIALS=path_to_gmail_credentials.json
+     ```
+
+---
+
+## Project Goals
+- **Efficiency:** Minimize human workload with automated ticket replies.
+- **Accuracy:** Use advanced AI models to interpret and respond accurately.
+- **Scalability:** Design a system that can handle a growing number of feedback submissions.
+
+---
+
+## Contributions
+Contributions are welcome! Feel free to submit issues, fork the repo, and create pull requests.
+
+---
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+## Acknowledgments
+Special thanks to the creators of React.js, Flask, LangGraph, RAG, Gemini, and Google for providing the Gmail API.
+
+---
+
+## Contact
+For queries or support, please email us at support@smartfeedback.com.
+
+---
+
+*Let's revolutionize feedback management with AI-powered automation!*
+
