@@ -49,7 +49,7 @@ This project is a **Smart Feedback Form and Ticket Automation System** designed 
 ### Steps to Run the Project
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-repo/smart-feedback-system.git
+   git clone https://github.com/your-repo/TicketAutomation.git
    cd smart-feedback-system
    ```
 
